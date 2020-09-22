@@ -8,7 +8,7 @@ function MyApp({ Component, pageProps }: AppProps): JSX.Element {
   return (
     <>
       <Head>
-        <title>Web app boilerplate</title>
+        <title>Gastro App</title>
       </Head>
       <Theme>
         <BasicLayout>

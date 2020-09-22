@@ -1,12 +1,7 @@
-import React from 'react'
-import styled from '@xstyled/styled-components'
+import Home from '@pageComponents/Home'
 
-const HomeWrap = styled.div`
-  color: primary;
-`
-
-const Home = (): JSX.Element => {
-  return <HomeWrap>Home</HomeWrap>
+const Index = (): JSX.Element => {
+  return <Home/>
 }
 
-export default Home
+export default Index
