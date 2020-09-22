@@ -6,8 +6,13 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Inter', sans-serif;
+    color: primary;
     font-size: 1rem;
+  }
+
+  p {
+    color: secondary;
   }
 
   *,
