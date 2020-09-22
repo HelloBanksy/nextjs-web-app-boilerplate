@@ -6,4 +6,3 @@ Feel free to use it.
 yarn
 yarn dev
 ```
-# GastroApp
