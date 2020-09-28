@@ -6,7 +6,7 @@ export const Home = (): JSX.Element => {
     <HomepageWrap>
       <H1>Lads?</H1>
       <P>
-        This is web app boilerplate, based on: <Bold>NextJS, XStyledComponents &amp; TypeScript</Bold> 🚀
+        This is web app boilerplate, based on: <Bold>NextJS, StyledComponents &amp; TypeScript</Bold> 🚀
       </P>
       <P>Feel free to use it as your basic layer.</P>
     </HomepageWrap>
