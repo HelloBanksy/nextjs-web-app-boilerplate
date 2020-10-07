@@ -1,4 +1,4 @@
-import styled from '@xstyled/styled-components'
+import styled from 'styled-components'
 
 export const HomepageWrap = styled.div`
   width: 100%;

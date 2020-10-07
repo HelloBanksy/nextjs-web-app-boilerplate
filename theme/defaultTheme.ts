@@ -47,7 +47,7 @@ export const theme = {
   shadows: {
     smLeftGray: '-6px 6px 10px 10px #F1F1F1',
   },
-  spaces: [0, 4, 8, 16, 24, 48, 96, 144, 192, 240], // same as xstyled default
+  spaces: ['0px', '4px', '8px', '16px', '24px', '48px', '96px', '144px', '192px', '240px'],
   transitions: {},
   zIndices: [0, 1, 2, 3, 5, 30, 40, 100, 200, 300, 9999],
 }

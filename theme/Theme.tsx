@@ -1,7 +1,11 @@
 import React from 'react'
-import { ThemeProvider } from '@xstyled/styled-components'
+import { ThemeProvider } from 'styled-components'
 import { theme } from './defaultTheme'
 
-export const Theme = ({ children }): JSX.Element => {
+type Props = {
+  children: any
+}
+
+export const Theme = ({ children }: Props): JSX.Element => {
   return <ThemeProvider theme={theme}>{children}</ThemeProvider>
 }
