@@ -10,14 +10,14 @@ export const HomepageWrap = styled.div`
 `
 
 export const Bold = styled.b`
-  color: bold;
+  color: ${(props) => props.theme.colors.bold};
 `
 
 export const H1 = styled.h1`
-  font-weight: thick;
+  font-weight: ${(props) => props.theme.fontWeights.thick};
   margin: 0;
 `
 
 export const P = styled.p`
-  margin: 1;
+  margin: ${(props) => props.theme.spaces[1]};
 `
