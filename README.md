@@ -1,5 +1,5 @@
 # Next JS web app boilerplate
-Web app boilerplate based on Next JS, styled-components and typescript.
+Web app boilerplate based on React, Redux, Redux-Saga, Next JS, styled-components and typescript.
 Feel free to use it for your project.
 
 ## ⚡ Features
@@ -8,6 +8,8 @@ Feel free to use it for your project.
 * Styled components styling.
 * Not bonded with any structure.
 * TypeScript implemented.
+* Redux and Redux-Saga ready to use.
+* Custom 404 error page.
 
 ## ▶️ Getting started
 ```
@@ -24,4 +26,28 @@ yarn dev
 ```
 yarn build
 yarn start
+```
+
+## Redux and Redux-Saga implementation example
+```
+// Mapping redux state
+const mapStateToProps = (state) => {
+  return {
+    exampleState: state,
+  }
+}
+
+// Mapping functions dispatches
+const mapDispachToProps = (dispatch) => {
+  return {
+    onExampleCall: () => dispatch({ type: 'YOUR_TYPE_OF_ACTION' }),
+  }
+}
+
+const ComponentContainer = (props) => {
+  return <Component {...props} />
+}
+
+export default connect(mapStateToProps, mapDispachToProps)(ComponentContainer)
+
 ```
