@@ -29,7 +29,7 @@ yarn start
 ```
 
 ## Redux and Redux-Saga implementation example
-```
+```javascript
 // Mapping redux state
 const mapStateToProps = (state) => {
   return {
