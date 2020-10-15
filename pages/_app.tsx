@@ -3,6 +3,17 @@ import type { AppProps /*, AppContext */ } from 'next/app'
 import Theme from '../theme'
 import BasicLayout from '../layout/Basic'
 import Head from 'next/head'
+import { Provider } from 'react-redux'
+import { createStore, applyMiddleware } from 'redux'
+import createSagaMiddleware from 'redux-saga'
+import rootReducer from '../store/reducers'
+import rootSaga from '../sagas'
+import { composeWithDevTools } from 'redux-devtools-extension'
+
+const sagaMiddleware = createSagaMiddleware()
+const store = createStore(rootReducer, composeWithDevTools(applyMiddleware(sagaMiddleware)))
+sagaMiddleware.run(rootSaga)
+
 
 function MyApp({ Component, pageProps }: AppProps): JSX.Element {
   return (
@@ -16,11 +27,13 @@ function MyApp({ Component, pageProps }: AppProps): JSX.Element {
           crossOrigin=""
         />
       </Head>
-      <Theme>
-        <BasicLayout>
-          <Component {...pageProps} />
-        </BasicLayout>
-      </Theme>
+      <Provider store={store}>
+        <Theme>
+          <BasicLayout>
+            <Component {...pageProps} />
+          </BasicLayout>
+        </Theme>
+      </Provider>
     </>
   )
 }

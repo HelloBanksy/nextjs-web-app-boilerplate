@@ -1,6 +1,5 @@
 export const theme = {
   breakpoints: {
-    // same as xstyled default
     xs: 0,
     sm: 576,
     md: 768,
@@ -37,7 +36,6 @@ export const theme = {
     medium: '3px solid',
     thick: '10px solid',
   },
-  // ...........................
   radii: {
     sm: '2px',
     md: '5px',

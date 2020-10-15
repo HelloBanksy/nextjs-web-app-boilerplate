@@ -7,12 +7,12 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
-    color: primary;
+    color: ${(props) => props.theme.colors.primary};
     font-size: 1rem;
   }
 
   p {
-    color: secondary;
+    color: ${(props) => props.theme.colors.secondary};
   }
 
   *,
