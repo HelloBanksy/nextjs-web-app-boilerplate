@@ -9,6 +9,11 @@ export const HomepageWrap = styled.div`
   align-items: center;
 `
 
+export const DummyDataTrigger = styled.b`
+  cursor: pointer;
+  color: ${(props) => props.theme.colors.bold};
+`
+
 export const Bold = styled.b`
   color: ${(props) => props.theme.colors.bold};
 `

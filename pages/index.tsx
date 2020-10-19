@@ -1,8 +1,8 @@
 import React from 'react'
-import Home from '@pageComponents/Home'
+import HomeComponent from '@pageComponents/HomeComponent'
 
 const Index = (): JSX.Element => {
-  return <Home />
+  return <HomeComponent />
 }
 
 export default Index
